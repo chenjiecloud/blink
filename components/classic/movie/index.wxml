@@ -1,0 +1,4 @@
+<view class="container">
+  <image class="classic-img" src=""></image>
+  <text class="class-tag"></text>
+</view>

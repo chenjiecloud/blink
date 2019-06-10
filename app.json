@@ -1,14 +1,14 @@
 {
-	"pages": [
-		"pages/classic/classic"
-	],
-	"window": {
+  "pages": [
+    "pages/classic/classic"
+  ],
+  "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "旧岛",
     "navigationBarTextStyle": "black",
     "navigationStyle": "default",
     "backgroundColor": "#ffffff",
     "enablePullDownRefresh": false
-	},
-	"sitemapLocation": "sitemap.json"
+  },
+  "sitemapLocation": "sitemap.json"
 }
