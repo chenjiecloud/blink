@@ -3,10 +3,12 @@
 		"pages/classic/classic"
 	],
 	"window": {
-		"backgroundTextStyle": "light",
-		"navigationBarBackgroundColor": "#fff",
-		"navigationBarTitleText": "旧岛",
-		"navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "旧岛",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": false
 	},
 	"sitemapLocation": "sitemap.json"
 }
