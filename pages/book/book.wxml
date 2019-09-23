@@ -1,0 +1,20 @@
+<view wx:if="{{!searching}}" class="container">
+  <view class="header">
+    <view class='box' bind:tap="onSearching">
+      <image src="/images/icon/search.png" />
+      <text>搜索书籍</text>
+    </view>
+  </view>
+  <view class="sub-container">
+    <image class="head-img" src="/images/book/quality.png" />
+    <view class="books-container">
+      <block wx:key="id" wx:for="{{books}}">
+        <v-book book="{{item}}" bind:onBookTo="onBookTo" />
+      </block>
+      <!-- wx:key - -->
+      <!-- 当前是 object 不重复 数字或者是字符串 -->
+      <!-- *this 只能是数字或者字符串 -->
+    </view>
+  </view>
+</view>
+<v-search more="{{more}}" bind:cancel="onCancel" wx:if="{{searching}}" />

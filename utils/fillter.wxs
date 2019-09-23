@@ -1,0 +1,19 @@
+// wxs 和 js 的es5 相似  所以不能使用es6的相关api
+
+var format = function(text) {
+  // setData 绑定的文本，是需要时间来更新到data中的，当没有text的值时，返回
+  if (!text) {
+    return
+  }
+  var reg = getRegExp('\\\\n', 'g')
+  return text.replace(reg, '\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+}
+
+var limit = function(array, length) {
+  return array.slice(0, length)
+}
+
+module.exports = {
+  format: format,
+  limit: limit
+}

@@ -1,4 +1,5 @@
-<view class="container">
-  <image class="classic-img" src=""></image>
-  <text class="class-tag"></text>
+<view class="classic-container" hidden="{{hidden}}">
+  <image class="classic-img" src="{{img}}" lazy-load="{{true}}" />
+  <image class="tag" src="images/movie@tag.png" />
+  <text class="content">{{content}}</text>
 </view>
